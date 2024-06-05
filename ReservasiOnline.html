@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Reservasi Online</title>
+</head>
+<style>
+    input[type=text],
+    select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 5px solid black;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    input[type=text],
+    select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 5px solid black;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    input[type=email],
+    select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 5px solid black;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    input[type=number],
+    select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 5px solid black;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    input[type="datetime-local"],
+    select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 5px solid black;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    button[type=submit] {
+        width: 100%;
+        background-color: rgb(0, 64, 241);
+        color: rgb(255, 255, 255);
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    input[type=submit]:hover {
+        background-color: #ffffff;
+    }
+
+    body {
+        min-height: 100vh;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        background-image: url(img/bg_reservasi.jpg);
+        background-size: cover;
+        background-position: center;
+        position: relative;
+    }
+</style>
+
+<body>
+    <center>
+        <center>
+            <h1 style="background-color: rgb(0, 64, 241);">Reservasi Online</h1>
+        </center><br>
+        <table>
+            <form name="fpencarian" method="POST" action="reservasi.php">
+                <div class="input-pencarian">
+                    <tr>
+                        <th>Nama Lengkap</th>
+                        <th>:</th>
+                        <th><input type="text" name="namalengkap" placeholder="Masukkan Nama Lengkap Anda"
+                                autocomplete="off" pattern="[A-Za-z ]+" style="width: 250px;" required></th>
+                    </tr><br>
+                    <tr>
+                        <th>Nomor Telepon</th>
+                        <th>:</th>
+                        <th><input type="number" name="nomortelepon" placeholder="Masukkan Nomor Telepon Anda"
+                                autocomplete="off" maxlength="12" style="width: 250px;" required></th>
+                    </tr>
+                    <tr>
+                        <th>E-mail</th>
+                        <th>:</th>
+                        <th><input type="email" name="email" placeholder="Masukkan Alamat e-mail Anda"
+                                autocomplete="off" style="width: 250px;" required></th>
+                    </tr>
+                    <tr>
+                        <th>Tanggal Check-in</th>
+                        <th>:</th>
+                        <th><label for="waktu"></label>
+                            <label for="meeting-time"></label>
+                            <input type="datetime-local" id="meeting-time" name="checkin" min="2022-15-12T19:30"
+                                max="2090-15-15T19:30" style="width: 250px;" autocomplete="off" required>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>Jumlah Dewasa</th>
+                        <th>:</th>
+                        <th><input type="number" name="jumlahdewasa" min="1" max="20" placeholder="Jumlah Dewasa"
+                                autocomplete="off" style="width: 250px;" required></th>
+                    </tr>
+                    <tr>
+                        <th>Jumlah Anak-Anak (bila ada)</th>
+                        <th>:</th>
+                        <th><input type="number" name="jumlahanakanak" min="1" max="20" placeholder="Jumlah Anak-Anak"
+                                autocomplete="off" style="width: 250px;"></th>
+                    </tr>
+                    <tr>
+                        <th>Jumlah Malam di Hotel</th>
+                        <th>:</th>
+                        <th><input type="number" name="jumlahmalam" min="1" max="365" placeholder="Jumlah Malam"
+                                autocomplete="off" style="width: 250px;" required></th>
+                    </tr>
+                    <tr>
+                        <th>Tipe Kamar</th>
+                        <th>:</th>
+                        <th><select name="tipekamar" autocomplete="off">
+                                <option value="Standard" selected>Standard</option>
+                                <option value="Superior">Superior</option>
+                                <option value="Deluxe">Deluxe</option>
+                            </select></th>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <th></th>
+                        <th>
+                </div>
+                <button class="hide-submit" value="Lakukan Pemesanan" type="submit" onclick="hasil()">
+                    <p class="fas fa-equals">Lakukan Pemesanan</p>
+                </button>
+                </div>
+                </th>
+                </div>
+            </form>
+        </table>
+        <script>
+            function hasil() {
+                var namalengkap = document.fpencarian.namalengkap.value;
+                var nomortelepon = document.fpencarian.nomortelepon.value;
+                var email = document.fpencarian.email.value;
+                var checkin = document.fpencarian.checkin.value;
+                var jumlahdewasa = document.fpencarian.jumlahdewasa.value;
+                var jumlahanakanak = document.fpencarian.jumlahanakanak.value;
+                var jumlahmalam = document.fpencarian.jumlahmalam.value;
+                var tipekamar = document.fpencarian.tipekamar.value;
+                var harga_kamar = "";
+                var total_harga = "";
+
+                if (tipekamar == "Standard") {
+                    harga_kamar = "Rp. 400.000,00";
+                    total_harga = Math.round(jumlahmalam * 400);
+                }
+                else if (tipekamar == "Superior") {
+                    harga_kamar = "Rp. 700.000,00";
+                    total_harga = Math.round(jumlahmalam * 700);
+                }
+                if (tipekamar == "Deluxe") {
+                    harga_kamar = "Rp. 1000.000,00";
+                    total_harga = Math.round(jumlahmalam * 1000);
+                }
+
+                alert(
+                    "Nama Lengkap: " + namalengkap + "\nNomor Telepon: " + nomortelepon +
+                    "\nEmail: " + email + "\nCheck-in: " + checkin +
+                    "\nJumlah Dewasa: " + jumlahdewasa + "\nJumlah Anak-Anak: " + jumlahanakanak + "\nJumlah Malam: " + jumlahmalam + "\nTipe Kamar: " + tipekamar + "\nHarga Kamar: " + harga_kamar +
+                    "\n\nTotal biaya yang harus anda keluarkan adalah sebesar" +
+                    "\nRp. " + total_harga + ".000,00" +
+                    "\nPembayaran sudah selesai, Screenshot halaman ini untuk jadi bukti pembayaran"
+                );
+            }
+        </script>
+</body>
+
+</html>

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <title> Daftar dan Deskripsi Kamar Hotel </title>
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+        <link rel="stylesheet" type="text/css" href="css/styleDeskripsi.css">
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"> </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"> </script>
+    </head>
+    <body>
+        <!--- Header --->
+        <header> 
+            <div class="container">
+                <h1> <a href="index.html"> <b> HOBOOK </b> </a> </h1>
+                <ul> 
+                    <li> <a href="index.html"> HOME </a> </li>
+                    <li class="actives"> <a href="Daftar dan Deskripsi Kamar Hotel.html">PEMESANAN</a> </li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                    <li> <a href="Login.php" onclick="return confirm('Yakin mau keluar ?')"> LOGOUT </a> </li>
+                </ul>
+            </div>
+        </header>
+
+        <!--- Standard Room --->
+        <div class="standard-room">
+            <div class="box">
+                <div id="carouselExampleIndicators1" class="carousel slide" data-bs-ride="true">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"> </button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="1" aria-label="Slide 2"> </button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="2" aria-label="Slide 3"> </button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="3" aria-label="Slide 4"> </button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/standard-room-1.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/standard-room-2.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/standard-room-3.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/standard-room-4.jpg" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"> </span>
+                        <span class="visually-hidden"> Previous </span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"> </span>
+                        <span class="visually-hidden"> Next </span>
+                    </button>
+                </div>
+                <div class="title">
+                    <h3> <b> Standard Room </b> </h3>
+                    <hr> 
+                    <span class="bi bi-tags-fill"> <b> IDR 400, 000 </b> </span>
+                    <div class="deskripsi" align="justify"> Standard Room merupakan kamar yang memiliki ukuran ruang sekitar <span class="bi bi-arrows-angle-expand"> <b> 27 m2. </b> </span> Standard Room ini paling banyak diminati oleh para pengunjung. Standard Room menawarkan ruang yang cukup luas dan nyaman, dengan pemandangan yang menghadap taman, jalan, dan air mancur. Serta kamar mandi dengan standing shower. </div>
+                    <hr>
+                </div>
+                <div class="fasilitas">
+                    <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#staticBackdrop1"> Selengkapnya </button>
+                    <a href="ReservasiOnline.html" type="button" class="btn btn-dark"> Pesan </a>
+                    <div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel1" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="staticBackdropLabel"> <b> Fasilitas Standard Room </b> </h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <span class="bi bi-check-circle-fill"> 2 Tempat tidur berukuran single size </span>
+                                    <br> <span class="bi bi-check-circle-fill"> Air Conditioning </span> 
+                                    <br> <span class="bi bi-check-circle-fill"> 1 LCD TV </span>
+                                    <br> <span class="bi bi-check-circle-fill"> Cable-Satellite TV </span>
+                                    <br> <span class="bi bi-check-circle-fill"> Free Wifi </span>
+                                    <br> <span class="bi bi-check-circle-fill"> Telepon kamar </span>
+                                    <br> <span class="bi bi-check-circle-fill"> Layanan kamar 24 jam </span>
+                                    <br> <span class="bi bi-check-circle-fill"> Perlengkapan tidur </span>
+                                    <br> <span class="bi bi-check-circle-fill"> Perlengkapan mandi </span>
+                                    <br> <span class="bi bi-check-circle-fill"> Gratis air mineral dalam kemasan </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--- Superior Room --->
+        <div class="superior-room">
+            <div class="box">
+                <div id="carouselExampleIndicators2" class="carousel slide" data-bs-ride="true">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="1" aria-label="Slide 2"> </button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="2" aria-label="Slide 3"> </button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="3" aria-label="Slide 4"> </button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/superior-room-1.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/superior-room-2.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/superior-room-3.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/superior-room-4.jpg" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"> </span>
+                        <span class="visually-hidden"> Previous </span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"> </span>
+                        <span class="visually-hidden"> Next </span>
+                    </button>
+                </div>
+                <div class="title">
+                    <h3> <b> Superior Room </b> </h3>
+                    <hr> 
+                    <span class="bi bi-tags-fill"> <b> IDR 700, 000 </b> </span>
+                    <div class="deskripsi" align="justify"> Superior Room merupakan kamar yang memiliki ukuran ruang sekitar <span class="bi bi-arrows-angle-expand"> <b> 75,3 m2. </b> </span> Superior Room ini menawarkan ruang yang lebih luas, dengan dapur kecil yang menyatu dengan ruang tamu bergaya simple dan minimalis, dan pemandangan yang menghadap kolam renang. Serta kamar mandi dengan standing shower dan bathub. </div>
+                    <hr>
+                </div>
+                <div class="fasilitas">
+                    <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#staticBackdrop2"> Selengkapnya </button>
+                    <a href="ReservasiOnline.html" type="button" class="btn btn-dark"> Pesan </a>
+                    <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel2" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="staticBackdropLabel"> <b> Fasilitas Superior Room </b> </h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <span class="bi bi-check-circle-fill"> 1 Tempat tidur berukuran queen size </span>
+                                    <br> <span class="bi bi-check-circle-fill"> Air Conditioning </span>  
+                                    <br> <span class="bi bi-check-circle-fill"> 2 LCD TV </span>
+                                    <br> <span class="bi bi-check-circle-fill"> Cable-Satellite TV </span>
+                                    <br> <span class="bi bi-check-circle-fill"> Free Wifi </span>
+                                    <br> <span class="bi bi-check-circle-fill"> Telepon kamar </span>
+                                    <br> <span class="bi bi-check-circle-fill"> Layanan kamar 24 jam </span>
+                                    <br> <span class="bi bi-check-circle-fill"> Perlengkapan tidur </span>
+                                    <br> <span class="bi bi-check-circle-fill"> Perlengkapan mandi </span>
+                                    <br> <span class="bi bi-check-circle-fill"> Perlengkapan mandi </span>
+                                    <br> <span class="bi bi-check-circle-fill"> Perlengkapan dapur </span>
+                                    <br> <span class="bi bi-check-circle-fill"> Gratis air mineral dalam kemasan </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--- Deluxe Room --->
+        <div class="deluxe-room">
+            <div class="box">
+                <div id="carouselExampleIndicators3" class="carousel slide" data-bs-ride="true">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/deluxe-room-1.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/deluxe-room-2.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/deluxe-room-3.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/deluxe-room-4.jpg" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"> </span>
+                        <span class="visually-hidden"> Previous </span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"> </span>
+                        <span class="visually-hidden"> Next </span>
+                    </button>
+                </div>
+                <div class="title">
+                    <h3> <b> Deluxe Room </b> </h3> 
+                    <hr> 
+                    <span class="bi bi-tags-fill"> <b> IDR 1,000, 000 </b> </span>
+                    <div class="deskripsi" align="justify"> Deluxe Room merupakan kamar yang memiliki ukuran ruang sekitar <span class="bi bi-arrows-angle-expand"> <b> 98,5 m2. </b> </span> Deluxe Room ini menawarkan ruang yang sangat luas dengan dapur dan ruang makan yang menyatu dengan ruang tamu, dan balkon pribadi dengan pemandangan yang menghadap taman, dan kolam renang. Serta kamar mandi dengan standing shower dan bathub. </div>
+                    <hr>
+                </div>
+                <div class="fasilitas">
+                    <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#staticBackdrop3"> Selengkapnya </button>
+                    <a href="ReservasiOnline.html" type="button" class="btn btn-dark"> Pesan </a>
+                    <div class="modal fade" id="staticBackdrop3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel3" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="staticBackdropLabel"> <b> Fasilitas Deluxe Room</b> </h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <span class="bi bi-check-circle-fill"> 1 Tempat tidur berukuran king size </span>
+                                    <br> <span class="bi bi-check-circle-fill"> Air Conditioning </span>  
+                                    <br> <span class="bi bi-check-circle-fill"> 2 LCD TV </span>
+                                    <br> <span class="bi bi-check-circle-fill"> Cable-Satellite TV </span>
+                                    <br> <span class="bi bi-check-circle-fill"> Free Wifi </span>
+                                    <br> <span class="bi bi-check-circle-fill"> Telepon kamar </span>
+                                    <br> <span class="bi bi-check-circle-fill"> Layanan kamar 24 jam </span>
+                                    <br> <span class="bi bi-check-circle-fill"> Perlengkapan tidur </span>
+                                    <br> <span class="bi bi-check-circle-fill"> Perlengkapan mandi </span>
+                                    <br> <span class="bi bi-check-circle-fill"> Perlengkapan dapur </span>
+                                    <br> <span class="bi bi-check-circle-fill"> Meja rias </span>
+                                    <br> <span class="bi bi-check-circle-fill"> Gratis air mineral dalam kemasan </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--footer-->
+        <footer>
+            <div class="container">
+                <small> Copyright &copy; 2022 - Kelompok 7. All Right Reserved </small>
+            </div>
+        </footer>
+    </body>
+</html>
